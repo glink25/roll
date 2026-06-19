@@ -27,6 +27,7 @@ import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
+import { ShortlinkMenu } from "@/components/shortlink-menu";
 import {
   type LotteryDraft,
   configToDraft,
@@ -406,6 +407,8 @@ export function LotteryApp({ locale = "zh" }: { locale?: Locale }) {
               <p className={`-mt-2 text-center text-xs leading-5 ${copyFailed ? "text-destructive" : "text-muted-foreground"}`} role={copyFailed ? "alert" : undefined}>
                 {copyFailed ? copy.copyFailed : copy.shareHint}
               </p>
+
+              <ShortlinkMenu getLongUrl={() => window.location.href} disabled={!validation.config} locale={locale} />
 
               {!showResult && (
                 <div className="rounded-xl border border-dashed border-border p-5 text-center text-sm text-muted-foreground">

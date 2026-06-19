@@ -52,6 +52,26 @@ export const lotteryCopy = {
     proofTitle: "一条链接，就是可分享的抽奖凭证",
     proofDescription: "参与者、中奖数和种子共同决定结果。复制当前链接发给任何人，对方都能在自己的浏览器中复现同一顺序。",
     defaultSeedName: "Roll抽奖",
+    shortlink: {
+      trigger: "生成短链",
+      generating: "生成中…",
+      copied: "短链已复制",
+      freeNoLogin: "免费 · 免登录",
+      infoAria: "查看服务说明",
+      docLink: "查看官方文档",
+      privacyLabel: "隐私",
+      error: "短链生成失败，请重试",
+      localUnsupported: "短链服务无法处理本地地址，请在线上站点使用，或设置 NEXT_PUBLIC_SITE_URL 后再试",
+      providers: {
+        vgd: {
+          title: "v.gd 短链服务",
+          description:
+            "v.gd 由 is.gd 团队提供，免费、免登录，把当前完整分享链接转换为简短易发的地址。",
+          privacy:
+            "短链会把你的完整分享链接（含编码后的抽奖配置）发送到 v.gd 服务器以换取短地址。链接内容仍可被解码，请勿在其中放入敏感信息。",
+        },
+      },
+    },
     errors: {
       title_too_long: "抽奖名称不能超过 80 个字符",
       seed_required: "请输入随机种子",
@@ -121,6 +141,26 @@ export const lotteryCopy = {
     proofTitle: "One shareable link holds the draw record",
     proofDescription: "Participants, winner count, and seed determine the result. Send the current link to anyone and they can reproduce the same order in their browser.",
     defaultSeedName: "Giveaway",
+    shortlink: {
+      trigger: "Generate short link",
+      generating: "Generating…",
+      copied: "Short link copied",
+      freeNoLogin: "Free · No sign-in",
+      infoAria: "About this service",
+      docLink: "View official docs",
+      privacyLabel: "Privacy",
+      error: "Couldn't create a short link. Try again.",
+      localUnsupported: "Short link services can't handle local addresses. Use the deployed site, or set NEXT_PUBLIC_SITE_URL and retry.",
+      providers: {
+        vgd: {
+          title: "v.gd short links",
+          description:
+            "v.gd, from the is.gd team, is free and needs no sign-in. It turns the current full share link into a short, easy-to-send address.",
+          privacy:
+            "Generating a short link sends your full share link (including the encoded draw configuration) to v.gd's servers. The link remains decodable, so keep sensitive information out of it.",
+        },
+      },
+    },
     errors: {
       title_too_long: "The draw name must be 80 characters or fewer",
       seed_required: "Enter a random seed",

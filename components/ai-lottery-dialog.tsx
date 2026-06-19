@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { buildAiLotteryPrompt } from "@/lib/ai-lottery";
+import { copyText } from "@/lib/shortlink";
 import type { Locale } from "@/lib/i18n";
 
 const dialogCopy = {
@@ -55,24 +56,6 @@ function normalizePostUrl(value: string): string | undefined {
     return url.toString();
   } catch {
     return undefined;
-  }
-}
-
-async function copyText(value: string): Promise<boolean> {
-  try {
-    await navigator.clipboard.writeText(value);
-    return true;
-  } catch {
-    const textarea = document.createElement("textarea");
-    textarea.value = value;
-    textarea.setAttribute("readonly", "");
-    textarea.style.position = "fixed";
-    textarea.style.opacity = "0";
-    document.body.appendChild(textarea);
-    textarea.select();
-    const success = document.execCommand("copy");
-    textarea.remove();
-    return success;
   }
 }
 
