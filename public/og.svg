@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/>
+      <stop offset="0.5" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#ecfeff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#7c3aed"/><stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="150" cy="90" r="250" fill="#c4b5fd" opacity=".25"/>
+  <circle cx="1080" cy="40" r="230" fill="#67e8f9" opacity=".2"/>
+  <rect x="90" y="82" width="72" height="72" rx="20" fill="#0f172a"/>
+  <g fill="#fff"><circle cx="112" cy="104" r="6"/><circle cx="140" cy="104" r="6"/><circle cx="126" cy="118" r="6"/><circle cx="112" cy="132" r="6"/><circle cx="140" cy="132" r="6"/></g>
+  <text x="185" y="132" font-family="system-ui,sans-serif" font-size="42" font-weight="700" fill="#0f172a">Roll 模拟器</text>
+  <text x="90" y="300" font-family="system-ui,sans-serif" font-size="74" font-weight="750" letter-spacing="-3" fill="#0f172a">一次公平抽奖</text>
+  <text x="90" y="392" font-family="system-ui,sans-serif" font-size="74" font-weight="750" letter-spacing="-3" fill="url(#accent)">一条链接重放</text>
+  <text x="94" y="475" font-family="system-ui,sans-serif" font-size="28" fill="#475569">本地计算 · 固定种子 · 结果可验证</text>
+</svg>
